@@ -15,3 +15,10 @@ const remove = (req, res) => {
         success: true
     })
 }
+
+
+module.export = {
+    create,
+    update,
+    remove
+}
