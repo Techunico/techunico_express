@@ -4,7 +4,11 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "make:controller": "node ./core/createController.js"
+    "make:controller": "node ./core/createController.js",
+    "db:make": "knex migrate:make",
+    "db": "knex",
+    "db:migrate": "knex migrate:latest",
+    "db:rollback": "knex migrate:rollback"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
